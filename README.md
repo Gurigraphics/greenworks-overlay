@@ -1,7 +1,7 @@
 # greenworks-overlay
 Greenworks Steam Overlay - Complete Example in NW.js
 
-![alt tag](https://imgur.com/bFQBuir.png)
+![alt tag](https://imgur.com/e4RMEdv.png)
 
 ### Features
 
