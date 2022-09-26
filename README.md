@@ -1,5 +1,5 @@
 # greenworks-overlay
-Greenworks Steam Overlay - Complete Example
+Greenworks Steam Overlay - Complete Example in NW.js
 
 ### Features
 
