@@ -14,6 +14,12 @@ Greenworks Steam Overlay - Complete Example
 - Fixed method to close the app correctly and make sure it doesn't run in the background
 - Place icons correctly in the executable file
 
+### How download 
+
+```txt
+git clone https://github.com/Gurigraphics/greenworks-overlay
+```
+
 ### How add Steam dependences 
 
 Set correct version of NW.js in package.json
@@ -35,6 +41,7 @@ steam_api64.dll
 
 Install dependences
 ```js
+cd greenworks-overlay
 npm install
 ```
 Build Windows
