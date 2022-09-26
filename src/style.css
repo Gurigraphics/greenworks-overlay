@@ -1,0 +1,137 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  outline: none;
+  box-sizing: border-box;
+  overflow: hidden;
+  image-rendering: pixelated; 
+} 
+
+:root{
+  --dark: #353030;
+  --clean: #d8d8da;
+  --grey: #a2a2a2;
+  --yellow: #FF9800;
+}
+
+@font-face {
+  font-family: Nokia;
+  src: url('./fonts/nokiafc22.ttf');
+}
+ 
+
+button{
+  padding: 10px;
+  cursor: pointer;
+
+}
+
+body{
+  margin: 10px;
+}
+
+hr{
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+textarea{
+  width: 500px;
+  height: 60px
+}
+
+#forceRefreshCanvas{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -99999;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.01;
+  pointer-events: none; 
+}
+
+.dragMe{
+  margin: 0;
+  padding: 0;
+  top:0;
+  left:0;
+  right:0;
+  height: 32px;
+  position: absolute;
+  margin-right: 70px;
+  z-index: 9999;
+} 
+
+.drag{
+  -webkit-app-region:drag;
+  display: block;
+}
+
+.no-drag{
+  -webkit-app-region: no-drag;
+  display: none;
+}
+
+.hide{
+  opacity: 0%;
+}
+
+.show{
+  opacity: 100%;
+}
+
+.menuBar{
+  margin: 0;
+  padding: 0;
+  top:0;
+  left:0;
+  right:0;
+  width:100vw;
+  height:32px;
+  background: #353030;
+  position:absolute; 
+  user-select: none;
+  display: grid;
+  grid-template-columns: 1fr 32px 32px;
+  grid-template-rows: 1fr;
+  font-family: tahoma; 
+  font-size: 14px;
+  color: var(--clean); 
+}
+
+.menuBar:hover{
+  opacity: 100% !important;
+}
+
+.menuBar--gameTitle{
+  padding: 6px;
+  padding-left: 16px;
+}
+
+.menuBar--icon-fullscreen svg{ 
+  width: 22px;
+  height: 32px;
+}
+
+.menuBar--icon-x svg{ 
+  width: 22px;
+  height: 32px;
+}
+
+/*https://react-icons.github.io/react-icons/icons?name=ai*/
+.menuBar--icon-fullscreen:hover, .menuBar--icon-x:hover{
+  background: var(--dark);
+  cursor: pointer;
+  color: var(--grey);
+}
+
+.menuBar--icon-fullscreen:active, .menuBar--icon-x:active{
+  background: var(--dark);
+  cursor: pointer;
+  color: var(--yellow);
+}

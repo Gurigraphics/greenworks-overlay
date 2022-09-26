@@ -1,0 +1,17 @@
+{
+  "name": "greenworks-overlay",
+  "short_name": "greenworks-overlay",
+  "version": "1.0.1",
+  "manifest_version": 2,
+  "chromium-args": "--data-path='./saves/' --in-process-gpu --enable-node-worker --disable-plugins --disable-internal-flash --disable-popup-blocking --allow-file-access-from-files --ignore-gpu-blacklist --disable-direct-composition --disable-transparency --disable-gpu-vsync ",   
+  "icons": 
+    {
+      "150": "icons/mstile-150x150.png",   
+      "192": "icons/android-chrome-192x192.png",
+      "512": "icons/android-chrome-512x512.png" 
+    },    
+  "start_url": "index.html?homescreen=1",
+  "display": "standalone",
+  "background_color": "#3E4EB8",
+  "theme_color": "#2F3BA2"
+}
